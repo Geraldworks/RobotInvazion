@@ -30,14 +30,23 @@ public class EnemyMovement : MonoBehaviour
     /// </summary>
     void GetNextPoint()
     {
-        if (currentWaypointIndex >= waypoints.Length - 1)
-        {
-            Destroy(this);
+        if (isMovingToFinalWaypoint())
+        { 
             return;
         }
 
         currentWaypointIndex++;
         currentWaypoint = waypoints[currentWaypointIndex];
+    }
+
+    bool isMovingToFinalWaypoint()
+    {
+        return currentWaypointIndex >= waypoints.Length - 1;
+    }
+
+    public bool isAtFinalWaypoint()
+    {
+        return (isMovingToFinalWaypoint()) && (Vector3.Distance(transform.position, currentWaypoint.position) <= 0.4f);
     }
 
 }
