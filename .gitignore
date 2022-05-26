@@ -26,6 +26,9 @@
 # Visual Studio Code cache directory
 .vscode/
 
+# Mono crash reports
+mono_crash.*
+
 # Gradle cache directory
 .gradle/
 
