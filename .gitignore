@@ -26,6 +26,9 @@
 # Visual Studio Code cache directory
 .vscode/
 
+# Visual Studio Configurations
+.vsconfig
+
 # Mono crash reports
 mono_crash.*
 
