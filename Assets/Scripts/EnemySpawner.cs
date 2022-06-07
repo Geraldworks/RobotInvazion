@@ -1,10 +1,20 @@
 using UnityEngine;
-using System.Collections;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyStub;
+    [System.Serializable]
+    public class Wave
+    {
+        public string name;
+        public GameObject[] enemies;
+        public int[] enemyCounts;
+    }
+
+    public Wave[] waves;
     public Transform spawnPoint;
     public float timeBetweenWaves = 10f;
     private float countdown = 10f;
@@ -12,15 +22,17 @@ public class EnemySpawner : MonoBehaviour
     private readonly float intervalBetweenEnemies = 0.2f;
     public TMP_Text waveCountdownText;
     public TMP_Text currentWaveText;
+    // public GameObject[] enemies;
 
     /**
     This method keeps track of the text elements and the spawning of waves in the game
     */
+
     void Update() 
     {
         if (countdown <= 0f) 
         {
-            StartCoroutine(Spawnwave());
+            StartCoroutine(Spawnwave(waves[waveNumber]));
             countdown = timeBetweenWaves;
         }
 
@@ -40,22 +52,27 @@ public class EnemySpawner : MonoBehaviour
     /// <summary>
     /// This method determines how waves are to be spawned in the game.
     /// </summary>
-    IEnumerator Spawnwave() 
+    IEnumerator Spawnwave(Wave wave) 
     {
         waveNumber++;
+        int typesOfEnemiesToSpawn = wave.enemies.Length;
 
-        for (int i = 0; i < waveNumber; i++) 
+        for (int i = 0; i < typesOfEnemiesToSpawn; i++)
         {
-            SpawnEnemy();
-            yield return new WaitForSeconds(intervalBetweenEnemies);
+            for (int j = 0; j < wave.enemyCounts[i]; j++)
+            {
+                SpawnEnemy(wave.enemies[i]);
+                yield return new WaitForSeconds(intervalBetweenEnemies);
+            }
         }
+        yield break;
     }
 
     /// <summary>
     /// This method creates the enemy GameObjects.
     /// <summary>
-    void SpawnEnemy ()
+    void SpawnEnemy (GameObject enemy)
     {
-        Instantiate(enemyStub, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
 }
