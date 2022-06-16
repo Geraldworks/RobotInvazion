@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using System.Collections.Generic;
 
 
 public class EnemySpawner : MonoBehaviour
@@ -18,11 +17,11 @@ public class EnemySpawner : MonoBehaviour
     public Transform spawnPoint;
     public float timeBetweenWaves = 10f;
     private float countdown = 10f;
-    private int waveNumber = 0;
+    public int waveNumber = 0;
     private readonly float intervalBetweenEnemies = 0.2f;
     public TMP_Text waveCountdownText;
     public TMP_Text currentWaveText;
-    // public GameObject[] enemies;
+    public int numberOfWaves;
 
     /**
     This method keeps track of the text elements and the spawning of waves in the game
@@ -39,9 +38,9 @@ public class EnemySpawner : MonoBehaviour
         countdown -= Time.deltaTime;
 
         waveCountdownText.text = "NEXT WAVE IN : " + Mathf.Round(countdown).ToString() + " SECONDS";
-        currentWaveText.text = "CURRENT WAVE : " + waveNumber + "/7";
+        currentWaveText.text = "CURRENT WAVE : " + waveNumber + "/" + numberOfWaves;
 
-        if (waveNumber >= 7) 
+        if (waveNumber >= numberOfWaves) 
         {
             this.enabled = false;
             waveCountdownText.text = "NO MORE WAVES";

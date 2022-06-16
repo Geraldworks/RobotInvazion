@@ -124,4 +124,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ddb36ba38bc4171a403b8cf2777da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthTracker: {fileID: 0}
   damage: 1
