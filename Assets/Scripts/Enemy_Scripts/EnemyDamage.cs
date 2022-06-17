@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
@@ -11,7 +9,7 @@ public class EnemyDamage : MonoBehaviour
         if (gameObject.GetComponent<EnemyMovement>().isAtFinalWaypoint())
         {
             HomeBaseHealth.homeBaseHealth -= damage;
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
