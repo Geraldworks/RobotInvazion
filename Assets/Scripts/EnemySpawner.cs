@@ -37,8 +37,10 @@ public class EnemySpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        waveCountdownText.text = "NEXT WAVE IN : " + Mathf.Round(countdown).ToString() + " SECONDS";
-        currentWaveText.text = "CURRENT WAVE : " + waveNumber + "/" + numberOfWaves;
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+
+        waveCountdownText.text = "NEXT WAVE : " + Mathf.Round(countdown).ToString();
+        currentWaveText.text = "WAVE : " + waveNumber + "/" + numberOfWaves;
 
         if (waveNumber >= numberOfWaves) 
         {
