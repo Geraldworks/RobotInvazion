@@ -3,8 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseResume : MonoBehaviour
 {
-    public int defaultHealth;
-
     public void PauseGame(GameObject menu)
     {
         Time.timeScale = 0;
@@ -21,13 +19,11 @@ public class PauseResume : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
-        HomeBaseHealth.homeBaseHealth = defaultHealth;
     }
 
     public void QuitGame()
     {
         SceneManager.LoadScene(0);
         Time.timeScale = 1;
-        HomeBaseHealth.homeBaseHealth = defaultHealth;
     }
 }

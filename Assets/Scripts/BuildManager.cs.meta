@@ -3,7 +3,12 @@ guid: a85b96fda0b1a3b4694e65f04c0356d1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - NormalTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  - AOETurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  - DOTTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  - CCTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  - SpecialTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
