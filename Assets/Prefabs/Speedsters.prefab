@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2451748973806894287}
   - component: {fileID: 3857548950267921218}
   - component: {fileID: -7564411921920863224}
+  - component: {fileID: 2935348039249130171}
   m_Layer: 0
   m_Name: Speedsters
   m_TagString: Enemy
@@ -124,5 +125,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ddb36ba38bc4171a403b8cf2777da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthTracker: {fileID: 0}
   damage: 1
+--- !u!114 &2935348039249130171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323744674633548809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e0854b7ccc08440692f30099ba7df6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cashValue: 20

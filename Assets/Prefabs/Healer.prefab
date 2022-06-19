@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7119642484767349521}
   - component: {fileID: 7057385690511545338}
   - component: {fileID: 5181904442269992861}
+  - component: {fileID: -2541068035035301047}
   m_Layer: 0
   m_Name: Healer
   m_TagString: Enemy
@@ -111,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ddb36ba38bc4171a403b8cf2777da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthTracker: {fileID: 0}
   damage: 2
 --- !u!114 &5181904442269992861
 MonoBehaviour:
@@ -126,3 +126,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &-2541068035035301047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538343960376059411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e0854b7ccc08440692f30099ba7df6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cashValue: 0

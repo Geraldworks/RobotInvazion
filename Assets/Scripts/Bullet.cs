@@ -42,6 +42,11 @@ public class Bullet : MonoBehaviour
         Destroy(effectIns, 2f);
         Destroy(target.gameObject);
         Destroy(gameObject);
+
+        // If the bullet hits the target, kill the target and add money to the player's
+        // GetComponent retrieves the EnemyCashValue script
+        int cash = target.GetComponent<EnemyCashValue>().cashValue;
+        PlayerStats.Money += cash;
     }
 
 }

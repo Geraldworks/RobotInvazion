@@ -21,11 +21,11 @@ public class HomeBaseHealth : MonoBehaviour
     {
         if (homeBaseHealth <= 0)
         {
-            livesToGameOver.text = "Lives : 0";
+            livesToGameOver.text = "Lives left : 0";
         }
         else
         {
-            livesToGameOver.text = "Lives : " + homeBaseHealth;
+            livesToGameOver.text = "Lives left : " + homeBaseHealth;
         }
     }
 }
