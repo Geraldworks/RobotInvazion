@@ -9,6 +9,7 @@ MonoImporter:
   - DOTTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
   - CCTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
   - SpecialTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  - buildEffect: {fileID: 7621801610321744776, guid: 40aa205bae90542d1a8d8bdfd33617c0, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

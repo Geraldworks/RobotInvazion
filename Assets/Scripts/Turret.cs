@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
@@ -21,12 +19,15 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
 
+    private AudioSource shootingSound;
 
+    // Self reference sfx manager
+    // public GameObject SFXManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        shootingSound = GetComponent<AudioSource>();
     }
 
    void UpdateTarget()
@@ -80,7 +81,10 @@ public class Turret : MonoBehaviour
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)
+        {
             bullet.Seek(target);
+            shootingSound.Play();
+        }
     }
 
     void OnDrawGizmosSelected()
