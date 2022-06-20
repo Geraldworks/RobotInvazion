@@ -7,13 +7,11 @@ public class Bullet : MonoBehaviour
     public float speed = 70f;
     public GameObject impactEffect;
 
-
     public void Seek(Transform _target)
     {
         target = _target;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (target == null)
@@ -39,6 +37,7 @@ public class Bullet : MonoBehaviour
     void HitTarget() 
     {
         GameObject effectIns = (GameObject) Instantiate(impactEffect, transform.position, transform.rotation);
+
         Destroy(effectIns, 2f);
         Destroy(target.gameObject);
         Destroy(gameObject);
@@ -48,5 +47,4 @@ public class Bullet : MonoBehaviour
         int cash = target.GetComponent<EnemyCashValue>().cashValue;
         PlayerStats.Money += cash;
     }
-
 }

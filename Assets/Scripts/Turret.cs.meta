@@ -3,7 +3,10 @@ guid: 0aa1010ef87d7e649a3cfce01c63e971
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - partToRotate: {instanceID: 0}
+  - bulletPrefab: {fileID: 8293202377718825865, guid: c46d5fd993f65cf48896c10fb8f6748d, type: 3}
+  - firePoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

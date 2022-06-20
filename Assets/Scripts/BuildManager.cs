@@ -14,6 +14,9 @@ public class BuildManager : MonoBehaviour
 
     private TurretBlueprint turretToBuild;
 
+    // Retrive AudioSource
+    private AudioSource buildingSound;
+
     void Awake()
     {
         if (instance != null)
@@ -24,19 +27,13 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
 
-    public bool CanBuild { get { return turretToBuild != null; } }
-    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
-    /*
-    public TurretBlueprint GetTurretToBuild()
+    void Start()
     {
-        return turretToBuild;
+        buildingSound = GetComponents<AudioSource>()[0]; 
     }
 
-    public void SetTurretToBuild(GameObject turret)
-    {
-        turretToBuild = turret;
-    }
-    */
+    public bool CanBuild { get { return turretToBuild != null; } }
+    public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
     public void SelectTurretToBuild(TurretBlueprint turret)
     {
@@ -58,6 +55,8 @@ public class BuildManager : MonoBehaviour
 
         GameObject effect = (GameObject) Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 3f);
+
+        buildingSound.Play();
 
         Debug.Log("Turret build! Money left: " + PlayerStats.Money);
     }
