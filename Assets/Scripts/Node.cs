@@ -30,12 +30,11 @@ public class Node : MonoBehaviour
 
     void OnMouseDown()
     {
-        /*
+        // May cause bugs
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
-        */
         
 
         if (!buildManager.CanBuild)
@@ -54,13 +53,11 @@ public class Node : MonoBehaviour
 
     void OnMouseEnter()
     {
-        /*
+        // May cause bugs
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
-        */
-        
 
         if (!buildManager.CanBuild)
         {

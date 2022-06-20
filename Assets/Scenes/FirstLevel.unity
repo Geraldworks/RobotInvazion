@@ -2228,6 +2228,7 @@ GameObject:
   - component: {fileID: 260071631}
   - component: {fileID: 260071630}
   - component: {fileID: 260071629}
+  - component: {fileID: 260071632}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -2350,6 +2351,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260071627}
   m_CullTransparentMesh: 1
+--- !u!114 &260071632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260071627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da750c1568cce4717969acc6bb63603c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1948157998}
 --- !u!1001 &263415927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9146,6 +9160,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9219,6 +9234,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60.224, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8d4fec285b043399fd8d0986f99502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panSpeed: 30
+  rotationSpeed: 5
+  scrollSpeed: 5
 --- !u!1 &983201366
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,8 +9426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -59.982178}
-  m_SizeDelta: {x: 571.5, y: 142.672}
+  m_AnchoredPosition: {x: 0, y: -34.21318}
+  m_SizeDelta: {x: 571.5, y: 35.6454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992241263
 MonoBehaviour:
@@ -9454,7 +9484,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
