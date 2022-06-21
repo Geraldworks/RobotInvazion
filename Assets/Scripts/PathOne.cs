@@ -10,8 +10,10 @@ public class PathOne : MonoBehaviour
     /// </summary>
     void Awake() 
     {
-        waypoints = GameObject.FindGameObjectsWithTag("PathOne")
-                              .Select(curr => curr.transform)
-                              .ToArray();
+        waypoints = new Transform[transform.childCount];
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            waypoints[i] = transform.GetChild(i);
+        }
     }    
 }
