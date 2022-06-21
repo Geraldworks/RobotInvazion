@@ -11,7 +11,7 @@ public class PauseResume : MonoBehaviour
 
     public void ResumeGame(GameObject menu)
     {
-        Time.timeScale = 1;
+        Time.timeScale = 10;
         menu.SetActive(false);
     }
 

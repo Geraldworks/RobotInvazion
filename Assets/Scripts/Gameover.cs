@@ -9,8 +9,13 @@ public class Gameover : MonoBehaviour
     private float timeInterval = 2.5f;
 
     // Retrieve AudioSource
-    private AudioSource congratulations;
+    private AudioSource congratulations; // this variable will not be used (this is a lazy fix)
     private AudioSource lose;
+
+    // Retrieve Game Music
+    public GameObject backgroundMusic;
+    public GameObject loseMusic;
+    public GameObject winMusic;
 
     void Start()
     {
@@ -29,10 +34,14 @@ public class Gameover : MonoBehaviour
             {
                 if ((waveTracker.waveNumber >= waveTracker.numberOfWaves) & (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)) {
                     WinGame(winMenu);
+                    backgroundMusic.GetComponent<AudioSource>().Stop();
+                    winMusic.GetComponent<AudioSource>().Play();
                 }
             } else
             {
                 LoseGame(loseMenu);
+                backgroundMusic.GetComponent<AudioSource>().Stop();
+                loseMusic.GetComponent<AudioSource>().Play();
             }
 
             timeInterval = 2.5f;
@@ -59,7 +68,9 @@ public class Gameover : MonoBehaviour
 
     public void WinGame(GameObject winMenu)
     {
-        congratulations.Play();
+        // This is a lazy fix, this music will not be played
+        // congratulations.Play();
+
         Time.timeScale = 0;
         winMenu.SetActive(true);
     }
