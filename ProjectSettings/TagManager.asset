@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Enemy
   - Turret
+  - Missile
   layers:
   - Default
   - TransparentFX
