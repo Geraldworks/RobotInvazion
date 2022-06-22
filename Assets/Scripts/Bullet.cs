@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class Bullet : MonoBehaviour
 {
@@ -50,6 +49,7 @@ public class Bullet : MonoBehaviour
         {
             Damage (target);
         }
+
         Destroy(gameObject);
     }
 
@@ -58,7 +58,7 @@ public class Bullet : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider collider in colliders)
         {
-            Debug.Log(collider.tag);
+            Debug.Log(collider);
             if (collider.gameObject.tag == "Enemy")
             {   
                 Debug.Log("Explosion Damage");
