@@ -98,7 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
-  impactEffect: {fileID: 3035267722167185456, guid: 250ee3dea17cd88498c4a06348eaa756, type: 3}
+  explosionRadius: 0
+  impactEffect: {fileID: 3035267722167185456, guid: d5cd1c485321fde479bd02e2d5c4461b, type: 3}
 --- !u!82 &5171954757934618642
 AudioSource:
   m_ObjectHideFlags: 0
