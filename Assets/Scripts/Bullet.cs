@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
 
     public float speed = 70f;
+    public float damamge = 50f;
     public float explosionRadius = 0f;
     public GameObject impactEffect;
 
@@ -69,11 +70,12 @@ public class Bullet : MonoBehaviour
 
     void Damage(Transform enemy)
     {
-        Destroy(enemy.gameObject);
-        // If the bullet hits the target, kill the target and add money to the player's
-        // GetComponent retrieves the EnemyCashValue script
-        int cash = target.GetComponent<EnemyCashValue>().cashValue;
-        PlayerStats.Money += cash;
+        EnemyHealth e = enemy.GetComponent<EnemyHealth>(); 
+
+        if ( e != null)
+        {
+            e.TakeDamage(damamge);
+        }
     }
 
     void OnDrawGizmosSelected ()
