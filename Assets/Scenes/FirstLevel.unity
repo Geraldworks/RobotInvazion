@@ -425,7 +425,7 @@ MonoBehaviour:
     prefab: {fileID: 9074266620873249430, guid: 522913087e99c6f4e9326d8e3683c2a1, type: 3}
     cost: 30
   DOTTurret:
-    prefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+    prefab: {fileID: 8368329102088857125, guid: 4db09f5c63a70824b907819a98e682f7, type: 3}
     cost: 30
   CCTurret:
     prefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
@@ -6458,8 +6458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NormalTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
-  AOETurretPrefab: {fileID: 584689521230773956, guid: 522913087e99c6f4e9326d8e3683c2a1, type: 3}
-  DOTTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
+  AOETurretPrefab: {fileID: 9074266620873249430, guid: 522913087e99c6f4e9326d8e3683c2a1, type: 3}
+  DOTTurretPrefab: {fileID: 4916995921768079978, guid: 4db09f5c63a70824b907819a98e682f7, type: 3}
   CCTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
   SpecialTurretPrefab: {fileID: 3348836783390247546, guid: 72bb533a326be1645ace8b7e8cde3399, type: 3}
   buildEffect: {fileID: 7621801610321744776, guid: 40aa205bae90542d1a8d8bdfd33617c0, type: 3}
@@ -15401,7 +15401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 20b65f1646a89439a9b42336e2403633, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d611fb008be11246951f65e3041941d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
