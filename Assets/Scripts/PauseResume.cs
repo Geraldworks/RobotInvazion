@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseResume : MonoBehaviour
 {
+    public GameObject aud;
+
     public void PauseGame(GameObject menu)
     {
         Time.timeScale = 0;

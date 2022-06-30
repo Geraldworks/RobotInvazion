@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/MediumLevel.unity
+    guid: 7940c62bb18434e9985ededd6e2c97c9
+  - enabled: 1
+    path: Assets/Scenes/HardLevel.unity
+    guid: 6ae87b3a101af4b39885c42f617b93e2
+  - enabled: 1
     path: Assets/Scenes/Finish Menu.unity
     guid: 92b27b5ba47324ad787db45b0b0d49a3
+  - enabled: 1
+    path: Assets/Scenes/LevelSelector.unity
+    guid: fa247c7aec080443a80c6b012ca75752
   m_configObjects: {}

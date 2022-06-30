@@ -17,6 +17,9 @@ public class Gameover : MonoBehaviour
     public GameObject loseMusic;
     public GameObject winMusic;
 
+    // Tracking of Unlocked levels
+    public int levelToReach = 2;
+
     void Start()
     {
         congratulations = GetComponents<AudioSource>()[1];
@@ -73,5 +76,6 @@ public class Gameover : MonoBehaviour
 
         Time.timeScale = 0;
         winMenu.SetActive(true);
+        PlayerPrefs.SetInt("levelReached", levelToReach);
     }
 }
