@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startSpeed = 10f;
+    [HideInInspector]
+    public float speed;
+
     private Transform[] waypoints = PathOne.waypoints;
     private Transform currentWaypoint;
     private int currentWaypointIndex = 0;
@@ -12,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
     {
         gameObject.tag = "Enemy";
         currentWaypoint = waypoints[0];
+        speed = startSpeed;
     }
 
     /// This method moves the enemy in the Vector3 specified from vector subtraction
@@ -24,6 +28,8 @@ public class EnemyMovement : MonoBehaviour
         {
             GetNextPoint();
         }
+
+        speed = startSpeed;
     }
 
     /// <summary>
@@ -48,6 +54,12 @@ public class EnemyMovement : MonoBehaviour
     public bool isAtFinalWaypoint()
     {
         return (isMovingToFinalWaypoint()) && (Vector3.Distance(transform.position, currentWaypoint.position) <= 0.4f);
+    }
+
+    public void Slow(float amt)
+    {
+        speed = startSpeed * (1f - amt);
+
     }
 
 }
