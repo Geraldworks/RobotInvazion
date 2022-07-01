@@ -13,7 +13,6 @@ public class EnemyMovement : MonoBehaviour
     /// Initialises the starting waypoint for the Enemy to move towards
     void Start() 
     {
-        gameObject.tag = "Enemy";
         currentWaypoint = waypoints[0];
         speed = startSpeed;
     }

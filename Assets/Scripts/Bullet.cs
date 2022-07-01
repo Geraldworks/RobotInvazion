@@ -60,7 +60,7 @@ public class Bullet : MonoBehaviour
         foreach (Collider collider in colliders)
         {
             Debug.Log(collider);
-            if (collider.gameObject.tag == "Enemy")
+            if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Aircraft")
             {   
                 Debug.Log("Explosion Damage");
                 Damage (collider.transform);
