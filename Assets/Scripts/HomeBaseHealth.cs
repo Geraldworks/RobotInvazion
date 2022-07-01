@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 
 public class HomeBaseHealth : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class HomeBaseHealth : MonoBehaviour
 
     private int prevHealth;
     private AudioSource hitBase;
+
+    public Image healthBar;
 
     private void Start()
     {
@@ -25,6 +29,7 @@ public class HomeBaseHealth : MonoBehaviour
 
     void Update()
     {
+        healthBar.fillAmount = (float) homeBaseHealth / (float) startingHealth;
         // Triggers the home base getting hit sound
         if (homeBaseHealth < prevHealth)
         {
@@ -41,6 +46,7 @@ public class HomeBaseHealth : MonoBehaviour
         else
         {
             livesToGameOver.text = "Lives left : " + homeBaseHealth;
+            
         }
     }
 }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    private EnemyHealth targetEnemy;
+    private EnemyMovement targetSpeed;
 
     [Header("General")]
 
@@ -14,8 +16,12 @@ public class Turret : MonoBehaviour
     private float fireCountdown = 0f;
 
     [Header("Use Laser")]
+    public float damageOverTime = 30f;
+    public float slowAmt = 0.5f; //   from 0 - 1
     public bool useLaser = false;
     public LineRenderer lineRenderer;
+    public ParticleSystem impactEffect;
+    public Light impactLight;
 
 
     [Header("Unity Setup Fields")]
@@ -55,6 +61,8 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+            targetSpeed = nearestEnemy.GetComponent<EnemyMovement>();
+            targetEnemy = nearestEnemy.GetComponent<EnemyHealth>();
         } else 
         {
             target = null;
@@ -69,7 +77,11 @@ public class Turret : MonoBehaviour
             if (useLaser)
             {
                 if (lineRenderer.enabled)
+                {
                     lineRenderer.enabled = false;
+                    impactEffect.Stop();
+                    impactLight.enabled = false; 
+                }
             }
             return;
         }
@@ -101,12 +113,25 @@ public class Turret : MonoBehaviour
     }
 
     void Laser()
-    {
+    {   
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetSpeed.Slow(slowAmt);
+
         if (!lineRenderer.enabled)
+        {
             lineRenderer.enabled = true;
+            impactEffect.Play();
+            impactLight.enabled = true;
+        }
 
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
+
+        Vector3 dir = firePoint.position - target.position;
+
+        impactEffect.transform.position = target.position + dir.normalized;
+
+        impactEffect.transform.rotation = Quaternion.LookRotation(dir);
     }
 
     void Shoot()
