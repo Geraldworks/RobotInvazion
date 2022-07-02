@@ -5,7 +5,6 @@ public class Shop : MonoBehaviour
     public TurretBlueprint normalTurret;
     public TurretBlueprint AOETurret;
     public TurretBlueprint DOTTurret;
-    public TurretBlueprint CCTurret;
     public TurretBlueprint SpecialTurret;
 
     BuildManager buildManager;
@@ -31,12 +30,6 @@ public class Shop : MonoBehaviour
     {
         Debug.Log("DOT Turret Selected");
         buildManager.SelectTurretToBuild(DOTTurret);
-    }
-
-    public void SelectCCTurret()
-    {
-        Debug.Log("CC Turret Selected");
-        buildManager.SelectTurretToBuild(CCTurret);
     }
 
     public void SelectSpecialTurret()
