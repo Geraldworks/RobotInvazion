@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb15e90774dc601438c3bab45174748f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 100
+  startHealth: 70
   deathEffect: {fileID: 7933513418671250536, guid: c08569e854ac9aa4d884b742f600426d, type: 3}
   healthBar: {fileID: 3372000001134630718}
 --- !u!1 &5678476265901443086
