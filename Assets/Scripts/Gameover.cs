@@ -35,7 +35,10 @@ public class Gameover : MonoBehaviour
         {
             if (HasLivesLeft())
             {
-                if ((waveTracker.waveNumber >= waveTracker.numberOfWaves) & (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)) {
+                if ((waveTracker.waveNumber >= waveTracker.numberOfWaves) &
+                    (GameObject.FindGameObjectsWithTag("Enemy").Length == 0) &
+                    (GameObject.FindGameObjectsWithTag("Aircraft").Length == 0))
+                {
                     WinGame(winMenu);
                     backgroundMusic.GetComponent<AudioSource>().Stop();
                     winMusic.GetComponent<AudioSource>().Play();
@@ -47,7 +50,7 @@ public class Gameover : MonoBehaviour
                 loseMusic.GetComponent<AudioSource>().Play();
             }
 
-            timeInterval = 2.5f;
+            timeInterval = 2f;
         }
 
     }

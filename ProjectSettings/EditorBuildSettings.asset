@@ -13,14 +13,17 @@ EditorBuildSettings:
     guid: 80293a71a79854f10a25eb2ecdd1ba9c
   - enabled: 1
     path: Assets/Scenes/MediumLevel.unity
-    guid: 311a7492b1978481e957c6af371f998c
+    guid: c90f4fc570af34b7297612faecf42ba0
   - enabled: 1
     path: Assets/Scenes/HardLevel.unity
-    guid: 09475cdd306cf422eb164c27dd14e2f0
+    guid: 9cf3c90703191406d8da5c28cc84ea4a
   - enabled: 1
     path: Assets/Scenes/Finish Menu.unity
     guid: 92b27b5ba47324ad787db45b0b0d49a3
   - enabled: 1
     path: Assets/Scenes/LevelSelector.unity
     guid: fa247c7aec080443a80c6b012ca75752
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: d974ebe32fdb14107981a5269a64acd2
   m_configObjects: {}
