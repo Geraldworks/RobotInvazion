@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 5181904442269992861}
   - component: {fileID: -2541068035035301047}
   - component: {fileID: -2515573467472227632}
+  - component: {fileID: -1362367965308259870}
   m_Layer: 0
   m_Name: Healer
   m_TagString: Enemy
@@ -310,6 +311,21 @@ MonoBehaviour:
   startHealth: 250
   deathEffect: {fileID: 4523558908121343391, guid: 77cc38717ab16884981143e224a72074, type: 3}
   healthBar: {fileID: 7342358033071221103}
+--- !u!114 &-1362367965308259870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538343960376059411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3413a59b51f24ac9a941ac3431a0fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healAmount: 3
+  radiusOfEffect: 5
+  healingEffect: {fileID: 1363262193805382064, guid: ea5545147e8d54422af1e2a1165e13b0, type: 3}
 --- !u!1 &5946494321631298390
 GameObject:
   m_ObjectHideFlags: 0
