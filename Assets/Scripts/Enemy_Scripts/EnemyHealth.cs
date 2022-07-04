@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +27,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         int cash = gameObject.GetComponent<EnemyCashValue>().cashValue;
         PlayerStats.Money += cash;
