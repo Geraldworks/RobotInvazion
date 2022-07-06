@@ -6746,8 +6746,8 @@ MonoBehaviour:
   waves:
   - name: First Wave
     enemies:
-    - {fileID: 3538343960376059411, guid: a1c8b54ebb9774f6c88703a091f44db2, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
+    - {fileID: 1226076864936575964, guid: 1654e3c1d44ae48a58e2f771ee965ee8, type: 3}
+    - {fileID: 1226076864936575964, guid: 1654e3c1d44ae48a58e2f771ee965ee8, type: 3}
     - {fileID: 3538343960376059411, guid: a1c8b54ebb9774f6c88703a091f44db2, type: 3}
     enemyCounts: 010000000300000001000000
   - name: Second Wave
