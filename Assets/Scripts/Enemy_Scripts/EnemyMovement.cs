@@ -45,6 +45,11 @@ public class EnemyMovement : MonoBehaviour
         currentWaypoint = waypoints[currentWaypointIndex];
     }
 
+    public Transform GetTransformOfNextPoint()
+    {
+        return currentWaypoint;
+    }
+
     bool isMovingToFinalWaypoint()
     {
         return currentWaypointIndex >= waypoints.Length - 1;

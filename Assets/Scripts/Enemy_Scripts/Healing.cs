@@ -7,7 +7,7 @@ public class Healing : MonoBehaviour
     public float radiusOfEffect = 5.0f;
 
     public GameObject healingEffect;
-    readonly private float timeBetweenEffect = 5.0f;
+    readonly private float timeBetweenEffect = 3.0f;
     private float timeTracker = 0.0f;
 
     // Heals enemies in a range
