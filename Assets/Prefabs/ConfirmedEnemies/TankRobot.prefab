@@ -1296,7 +1296,7 @@ Transform:
   - {fileID: 6757988187736364170}
   m_Father: {fileID: 6758019157741231476}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.091381, y: 0, z: 12.443}
 --- !u!1 &6755784101362360728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1524,7 @@ Transform:
   - {fileID: 6762143596028083754}
   m_Father: {fileID: 6761624610143045076}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.79657, y: 0, z: -18.667}
 --- !u!1 &6756102125190901682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1874,7 @@ Transform:
   - {fileID: 6757711916247011966}
   m_Father: {fileID: 6761624610143045076}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.398067, y: 0, z: 18.667}
 --- !u!1 &6756219749869289900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2481,7 @@ Transform:
   - {fileID: 6758009509620073684}
   m_Father: {fileID: 6758019157741231476}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.0212994, y: 0, z: -12.443}
 --- !u!1 &6756484232028129854
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2842,7 @@ GameObject:
   - component: {fileID: 5997234813554434440}
   - component: {fileID: 2102468225108767536}
   - component: {fileID: 4572485706790328284}
+  - component: {fileID: 454815948}
   m_Layer: 0
   m_Name: TankRobot
   m_TagString: Enemy
@@ -2952,6 +2953,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!111 &454815948
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757065458133515592}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 022864cb4ec12448e9c170520fa29872, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 022864cb4ec12448e9c170520fa29872, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6757066436713692268
 GameObject:
   m_ObjectHideFlags: 0
