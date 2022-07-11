@@ -31,7 +31,7 @@ Transform:
   - {fileID: 1482094360028181446}
   m_Father: {fileID: 8277493091185175847}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -71.844, y: 41.439, z: 75.137}
+  m_LocalEulerAnglesHint: {x: -113.08968, y: -133.35071, z: 249.20401}
 --- !u!1 &140454861457051944
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ Transform:
   - {fileID: 8553252580309612149}
   m_Father: {fileID: 8277493091185175847}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 71.909, y: -42.435, z: -104.139}
+  m_LocalEulerAnglesHint: {x: 68.45575, y: -23.05862, z: -83.756836}
 --- !u!1 &1767238658175375069
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ Transform:
   - {fileID: 6156030179291470871}
   m_Father: {fileID: 7851588779766876253}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -165.07076}
 --- !u!1 &2343288510749613282
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +940,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 162777520315605026}
-  - component: {fileID: 8616157556300012985}
   - component: {fileID: 7056852409012112150}
   - component: {fileID: 3049478126464616381}
   - component: {fileID: 7532411542989383711}
@@ -948,6 +947,7 @@ GameObject:
   - component: {fileID: 6691152803204478033}
   - component: {fileID: 7944407543917138240}
   - component: {fileID: 5532184488582297794}
+  - component: {fileID: 533155483}
   m_Layer: 0
   m_Name: HealerRobot
   m_TagString: Enemy
@@ -973,21 +973,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &8616157556300012985
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3754054382698779185}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
 --- !u!114 &7056852409012112150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1068,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!111 &533155483
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3754054382698779185}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2ae52cbfec1ab4a63a838bc60ecdfb87, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ae52cbfec1ab4a63a838bc60ecdfb87, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4128895356072849972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2042,7 @@ Transform:
   - {fileID: 3921955633481972231}
   m_Father: {fileID: 7851588779766876253}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: -4.0599427}
 --- !u!1 &8731739246867439382
 GameObject:
   m_ObjectHideFlags: 0
