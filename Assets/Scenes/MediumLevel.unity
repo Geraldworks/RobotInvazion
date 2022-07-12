@@ -8589,7 +8589,7 @@ MonoBehaviour:
     enemyCounts: 0a0000000a000000020000000500000002000000
   - name: Sixth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
     - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
     - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
     - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
