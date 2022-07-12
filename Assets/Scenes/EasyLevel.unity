@@ -7923,38 +7923,38 @@ MonoBehaviour:
   waves:
   - name: First Wave
     enemies:
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
     enemyCounts: 05000000
   - name: Second Wave
     enemies:
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
     enemyCounts: 0a000000
   - name: Third Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
     enemyCounts: 05000000
   - name: Fourth Wave
     enemies:
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
     enemyCounts: 0500000002000000
   - name: Fifth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
     enemyCounts: 050000000500000002000000
   - name: Sixth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
     enemyCounts: 0a0000000a00000003000000
   - name: Seventh Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
     enemyCounts: 0f0000000f00000005000000
   spawnPoint: {fileID: 6406722505087543810}
   timeBetweenWaves: 10
