@@ -8559,65 +8559,80 @@ MonoBehaviour:
   waves:
   - name: First Wave
     enemies:
-    - {fileID: 1226076864936575964, guid: 1654e3c1d44ae48a58e2f771ee965ee8, type: 3}
-    - {fileID: 1226076864936575964, guid: 1654e3c1d44ae48a58e2f771ee965ee8, type: 3}
-    - {fileID: 3538343960376059411, guid: a1c8b54ebb9774f6c88703a091f44db2, type: 3}
-    enemyCounts: 010000000300000001000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    enemyCounts: 050000000a000000
   - name: Second Wave
     enemies:
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    enemyCounts: 0a000000
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    enemyCounts: 0a00000003000000
   - name: Third Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    enemyCounts: 05000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    enemyCounts: 05000000010000000a000000
   - name: Fourth Wave
     enemies:
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0500000002000000
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 6826759632238873897, guid: 0f3b33db8ba70430fba59cdaf22c9b15, type: 3}
+    enemyCounts: 0f000000020000000a000000
   - name: Fifth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 050000000500000002000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    enemyCounts: 0a0000000a000000020000000500000002000000
   - name: Sixth Wave
     enemies:
     - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0a0000000a00000003000000
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 6826759632238873897, guid: 0f3b33db8ba70430fba59cdaf22c9b15, type: 3}
+    enemyCounts: 0f0000000100000005000000020000000f00000005000000
   - name: Seventh Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0f0000000f00000005000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    enemyCounts: 190000001900000003000000
   - name: Eigth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0f0000000f00000005000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    enemyCounts: 140000000f000000
   - name: Ninth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0f0000000f00000005000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    - {fileID: 6826759632238873897, guid: 0f3b33db8ba70430fba59cdaf22c9b15, type: 3}
+    enemyCounts: 0f0000000f000000030000000700000007000000
   - name: Tenth Wave
     enemies:
-    - {fileID: 1323744674633548809, guid: 51b086044bf964294b300a12d6bca874, type: 3}
-    - {fileID: 526017387759981158, guid: fe970d3fed01c4e70ae9a8d3b3e440b3, type: 3}
-    - {fileID: 6026728300710309696, guid: a10b68641dc1b406db944648540f6452, type: 3}
-    enemyCounts: 0f0000000f00000005000000
+    - {fileID: 5752097653850975708, guid: b841a8e7dc9214502883731582e3da44, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 214371946431795500, guid: 4040a8b1ced854a9aafdd217654e859a, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    - {fileID: 6757065458133515592, guid: 18ed1294a93e94b0793c647d8dba03e7, type: 3}
+    - {fileID: 6826759632238873897, guid: 0f3b33db8ba70430fba59cdaf22c9b15, type: 3}
+    - {fileID: 3754054382698779185, guid: 7c65da63155e14aaebdb6a12a6ebb7a6, type: 3}
+    enemyCounts: 14000000020000000a000000020000000a000000020000000a0000000a00000002000000
   spawnPoint: {fileID: 6406722505087543810}
   timeBetweenWaves: 10
   waveNumber: 0
   waveCountdownText: {fileID: 1818089664}
   currentWaveText: {fileID: 1753805184}
-  numberOfWaves: 7
+  numberOfWaves: 10
 --- !u!114 &652775074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8664,7 +8679,7 @@ MonoBehaviour:
   backgroundMusic: {fileID: 1617493611}
   loseMusic: {fileID: 1999996536}
   winMusic: {fileID: 961814286}
-  levelToReach: 2
+  levelToReach: 3
 --- !u!114 &652775077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22135,7 +22150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Wave : 0/7'
+  m_text: 'Wave : 0/10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a99b6f2db8780406ba78aab68e1702b2, type: 2}
   m_sharedMaterial: {fileID: 8277900925082429651, guid: a99b6f2db8780406ba78aab68e1702b2, type: 2}
