@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class EscapeToPause : MonoBehaviour
 {
+    /// <summary>
+    /// This script enables a player to pause the game using the ESC key
+    /// </summary>
+
     public GameObject menu;
 
     void Update()

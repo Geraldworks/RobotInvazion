@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    /// <summary>
+    /// This script controls the speed at which the enemies move, and
+    /// the direction of movement to the end point
+    /// </summary>
+
     public float startSpeed = 10f;
     [HideInInspector]
     public float speed;

@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    /// <summary>
+    /// This script determines how a projectile is created, and how it
+    /// interacts with enemies in the game scene. Such as damaging the enemy,
+    /// playing particle animations and such.
+    /// </summary>
+
     private Transform target;
 
     public float speed = 70f;

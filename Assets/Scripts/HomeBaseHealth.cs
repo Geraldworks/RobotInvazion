@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class HomeBaseHealth : MonoBehaviour
 {
+    /// <summary>
+    /// This script tracks the number of lives the player has
+    /// throughout the stage and updates it on the UI panel
+    /// </summary>
+
     public TMP_Text livesToGameOver;
     public Transform enemyEndLocation;
     public int startingHealth;

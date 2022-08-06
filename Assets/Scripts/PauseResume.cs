@@ -3,6 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseResume : MonoBehaviour
 {
+    /// <summary>
+    /// This script provides the functionality for a player pause the game,
+    /// resume the game, restart the game or quit the game through the
+    /// pause menu.
+    /// </summary>
+
     public void PauseGame(GameObject menu)
     {
         Time.timeScale = 0;
