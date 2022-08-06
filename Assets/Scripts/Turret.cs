@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
+    /// <summary>
+    /// This script provides the blueprint which dictates how a turret is
+    /// suppose to track an enemy to shoot bullets at, and the type of
+    /// ammunition the turret uses.
+    /// </summary>
+
     private Transform target;
     private EnemyHealth targetEnemy;
     private EnemyMovement targetSpeed;

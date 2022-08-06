@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Healing : MonoBehaviour
 {
+    /// <summary>
+    /// This script gives healer enemies the functionality to heal surrounding
+    /// robots based on a timer and a heal rate. When an enemy is healed,
+    /// green particle animation is played on the enemy that was healed to
+    /// provide positive user interaction
+    /// </summary>
+
     [Range(3.0f, 8.0f)]
     public float healRate = 3.0f;
     public float radiusOfEffect = 5.0f;

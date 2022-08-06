@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class CamControl : MonoBehaviour
 {
+    /// <summary>
+    /// This script enables the player to move around the game scene
+    /// with a different range and motion
+    /// </summary>
+
     public float panSpeed = 20f;
     public float rotationSpeed = 5f;
 

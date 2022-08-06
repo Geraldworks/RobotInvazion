@@ -5,6 +5,10 @@ using System.Collections;
 
 public class EnemySpawner : MonoBehaviour
 {
+    /// <summary>
+    /// This script creates an interface for enemies to be spawned in the game
+    /// </summary>
+
     [System.Serializable]
     public class Wave
     {

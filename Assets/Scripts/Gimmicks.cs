@@ -3,6 +3,11 @@ using UnityEngine.UI;
 
 public class Gimmicks : MonoBehaviour
 {
+    /// <summary>
+    /// This script creates the game gimmicks which are immediately
+    /// interactable as soon as the player launches the stage
+    /// </summary>
+
     [Header("Air Strike")]
     public AudioSource airMusic;
     public Button airButton;

@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
+    /// <summary>
+    /// This script provides the functionality for robots to face
+    /// the correct direction as it is moving towards the endpoint
+    /// </summary>
+
     private Transform target;
 
     void Update()

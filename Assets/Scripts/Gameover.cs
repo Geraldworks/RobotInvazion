@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Gameover : MonoBehaviour
 {
+    /// <summary>
+    /// This script determines whether the player wins or loses the stage,
+    /// which is determined by the number of lives he has throughout
+    /// the entire stage.
+    /// </summary>
+
     public GameObject loseMenu;
     public GameObject winMenu;
     public EnemySpawner waveTracker;

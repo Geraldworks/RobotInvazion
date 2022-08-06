@@ -2,7 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
-{   
+{
+    /// <summary>
+    /// This script creates the amount of health an enemy has, and provides
+    /// functionality for it to be removed from the game scene when its
+    /// health reaches 0
+    /// </summary>
+
     public float startHealth = 100;
     private float health;
 

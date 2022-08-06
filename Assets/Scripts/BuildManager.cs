@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
+    /// <summary>
+	/// This script helps to create an interface for turrets to be built in the game
+	/// </summary>
+	
     public static BuildManager instance;
-
     public GameObject NormalTurretPrefab;
     public GameObject AOETurretPrefab;
     public GameObject DOTTurretPrefab;

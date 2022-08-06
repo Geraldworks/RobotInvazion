@@ -3,6 +3,12 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
+    /// <summary>
+    /// This script provides all the functionality for a node in the game.
+    /// The node enables the player to purchases towers and place them into
+    /// the game scene
+    /// </summary>
+
     public Color hoverColor;
     public Color notEnoughMoneyColor;
     public Vector3 positionOffSet;

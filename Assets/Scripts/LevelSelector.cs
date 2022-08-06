@@ -4,6 +4,12 @@ using UnityEngine.UI;
 
 public class LevelSelector : MonoBehaviour
 {
+    /// <summary>
+    /// This script helps to determine if a plyaer has unlocked the new
+    /// stages or not, and is able to select the level he wants to play
+    /// from the main menu screen.
+    /// </summary>
+
     public Button[] levelButtons;
 
     void Start()

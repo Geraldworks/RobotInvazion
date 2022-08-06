@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    /// <summary>
+    /// This script enables the user to interact with the shop system,
+    /// where he is able to spend money to purchase turrets that can be
+    /// placed on the nodes in the game scene
+    /// </summary>
+
     public TurretBlueprint normalTurret;
     public TurretBlueprint AOETurret;
     public TurretBlueprint DOTTurret;
