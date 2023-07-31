@@ -6,3 +6,5 @@ Orbital is a programme for students to pick software development skills by learn
 Done by
 - Aaron Pang
 - Gerald Ho Shao Xian
+
+Try out the game by downloading from [here](https://drive.google.com/drive/folders/1LnAMbz8TU42tggt60I0APiWe4sQRkUnf?usp=drive_link)
